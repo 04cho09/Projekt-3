@@ -1,5 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-* 
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h4,
+h5 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 0.875rem;
+}
+
+
+
+
 .column {
     float: left;
     width: 33.33%;
@@ -7,7 +49,7 @@
   }
   
  
-  .row::after {
+  .row:after {
     content: "";
     clear: both;
     display: table;
@@ -19,3 +61,10 @@
     padding: 5px;
     width: 150px;
   }
+
+  nav{
+    display: flexbox;
+    gap: 10px;
+  }
+
+
